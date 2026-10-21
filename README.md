@@ -4,10 +4,16 @@ A single Bash script that finds junk on macOS and asks before removing any of it
 
 It reports how much space each category takes, lets you remove all of it, pick items one by one, or skip it, and ends with a summary of what was freed.
 
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/amirhosseinNouri/clean-my-mac/main/cleanup.sh)
+```
+
+Add `--dry-run` at the end to only see what could be removed, or any other [option](#options).
+
 ## Quick start
 
 ```bash
-git clone <this-repo-url> clean-my-mac
+git clone https://github.com/amirhosseinNouri/clean-my-mac.git
 cd clean-my-mac
 chmod +x cleanup.sh
 
